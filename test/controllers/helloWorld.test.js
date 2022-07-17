@@ -3,7 +3,7 @@ const helloWorld = require('../../src/controllers/helloWorld').default;
 const MockResponse = require('../mockResponse').default;
 
 describe('Hello World', () => {
-    context('get', () => {
+    context('GET', () => {
         it("Sends a 'Hello World' message", () => {
             let res = new MockResponse();
             helloWorld.get(null, res);

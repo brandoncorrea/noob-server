@@ -3,7 +3,7 @@ const routes = require('../src/routes').default;
 const helloWorld = require('../src/controllers/helloWorld').default;
 
 describe('Routes', () => {
-    context('get', () => {
+    context('GET', () => {
         it('/hello', () => assert.equal(routes.get["/hello"], helloWorld.get));
     });
 });
